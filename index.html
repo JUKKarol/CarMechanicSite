@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Umultowo Garage</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+		<meta name="keywords" content="samochody, mechanik, naprawa, umultowo, umultowo garage, bmw serwis" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	</head>
+	<body>
+	
+			<div id="container">
+				<div id="title">
+					Umultowo Garage
+				</div>
+				
+				<div id="nav">
+					<ol>
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="uslugi.html">Usługi</a></li>
+						<li><a href="ostatnie_naprawy.html">Ostatnie naprawy</a></li>
+						<li><a href="opinie.html">Opinie</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					</ol>
+				</div>
+				<div style="clear: both;"></div>
+				
+				<div id="logo">
+					<img src="banner.jpg" width="100%" height="500px">
+				</div>
+				
+				<div id="socials">
+					<div id="fb">
+						<a href="https://www.facebook.com"><i class="icon-facebook-rect"></i></a>
+					</div>
+					
+					<div id="yt">
+						<a href="https://www.youtube.com"><i class="icon-youtube"></i></a>
+					</div>
+					
+					<div id="ig">
+						<a href="https://www.instagram.com"><i class="icon-instagram"></i></a>
+					</div>
+					<div style="clear: both;"></div>
+				</div>			
+				
+				<div id="topbar">
+					<div id="topbarL">
+						<img src="logo.png" width="300px" height="300px">
+					</div>
+					<div id="topbarR">
+						<h1>Lorem ipsum</h1>
+						dolor sit amet, consectetur adipiscing elit. Duis convallis diam quis metus blandit, eget ultrices justo consectetur. Proin ac sem euismod elit volutpat imperdiet ut ut dui. Mauris luctus, odio eu hendrerit hendrerit, dui tellus hendrerit turpis, semper facilisis purus elit a nibh. Morbi finibus, nunc a condimentum pretium, augue turpis hendrerit lacus, commodo elementum ipsum velit eget velit. Nulla consequat nisi eu elit tristique eleifend. Praesent sed venenatis ligula. Aenean quis mi sed mi luctus eleifend non eu magna. Proin blandit quam ac arcu volutpat malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget dignissim velit, commodo dictum dolor.
+						<br /><br />
+						Suspendisse ac leo iaculis, pharetra leo sollicitudin, suscipit mi. Sed nec libero ac nibh placerat fringilla. Sed quis massa facilisis, dapibus arcu quis, ultrices diam. Ut scelerisque, eros quis condimentum ullamcorper, metus metus dictum augue, ac euismod quam nisl ut tellus. Ut mi libero, congue eget pulvinar a, interdum eu tellus. Fusce fringilla risus lorem, quis egestas orci pulvinar non. Nunc in purus sed nisl feugiat volutpat consequat nec dui. Vivamus congue non mauris in dignissim. Aliquam ipsum augue, aliquet ut ex vel, ullamcorper aliquam velit. Suspendisse imperdiet vestibulum tortor non pellentesque. Nullam convallis tellus eget lobortis laoreet. Vestibulum tempus venenatis tellus non feugiat.
+						<br /><br />
+						Nunc iaculis cursus nisl at porttitor. Sed tempor risus vitae massa efficitur imperdiet. Morbi eleifend diam enim, non pellentesque sem molestie eget. Praesent vel tincidunt justo, nec finibus erat. Maecenas aliquam quam quis lobortis interdum. Phasellus sed nibh nisi. Nullam ipsum ipsum, faucibus sed varius quis, pellentesque ac dolor. Morbi sodales justo in molestie efficitur. Phasellus mollis hendrerit libero a ultrices. Proin viverra mi odio, sit amet condimentum sapien consequat sed. Nunc vitae pharetra nunc. Donec vel congue mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam accumsan ex ut urna malesuada facilisis. Integer interdum dapibus neque ut varius.
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="tiles">
+					<div class="tile">
+						Zaufanie klientów
+					</div>
+					
+					<div class="tile">
+						Przystępne ceny
+					</div>
+					<div style="clear: both;"></div>
+					
+					<div class="tile">
+						Szybkie terminy
+					</div>
+					
+					<div class="tile">
+						Wysoka jakość
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="info">
+					<div class="block">
+						<i class="icon-phone-squared"></i> 123-456-789
+					</div>
+					<div class="block">
+						Poznań ul. Umultowska 46
+					</div>
+					<div class="block">
+						Pon-Pt 8.00-17.00
+					</div>
+					<div style="clear: both;"></div>
+				</div>			
+			</div>
+		
+		<script src="jquery-3.6.1.min.js" ></script>
+		
+		<script>
+ 
+			$(document).ready(function() {
+			var NavY = $('#nav').offset().top;
+			  
+			var stickyNav = function(){
+			var ScrollY = $(window).scrollTop();
+				   
+			if (ScrollY > NavY) { 
+				$('#nav').addClass('sticky');
+			} else {
+				$('#nav').removeClass('sticky'); 
+			}
+			};
+			  
+			stickyNav();
+			  
+			$(window).scroll(function() {
+				stickyNav();
+			});
+			});
+			 
+		</script>
+
+	</body>
+</html>
